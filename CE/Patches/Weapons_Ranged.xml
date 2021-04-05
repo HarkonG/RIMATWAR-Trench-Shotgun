@@ -8,7 +8,7 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
-            
+
                 <!--===== TOOLS FOR THE TOOL GOD =====-->
                 <li Class="PatchOperationReplace">
                     <xpath>
@@ -127,7 +127,7 @@
                         <hasStandardCommand>true</hasStandardCommand>
                         <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                         <warmupTime>0.3</warmupTime>
-                        <range>12</range>
+                        <range>14</range>
                         <soundCast>GN_Shot_TrenchShotgun</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
