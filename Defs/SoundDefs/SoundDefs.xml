@@ -4,7 +4,7 @@
     <SoundDef>
         <defName>GN_Shot_TrenchShotgun</defName>
         <context>MapOnly</context>
-        <eventNames />
+        <eventNames/>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
             <li>
