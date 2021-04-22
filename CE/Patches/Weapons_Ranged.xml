@@ -64,19 +64,9 @@
                                 </capacities>
                                 <power>8</power>
                                 <cooldownTime>1.55</cooldownTime>
-                                <chanceFactor>1.5</chanceFactor>
+                                <chanceFactor>0.5</chanceFactor>
                                 <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-                            </li>
-                            <li Class="CombatExtended.ToolCE">
-                                <label>barrel</label>
-                                <capacities>
-                                    <li>Blunt</li>
-                                </capacities>
-                                <power>5</power>
-                                <cooldownTime>2.02</cooldownTime>
-                                <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
-                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                                                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
                             </li>
                             <li Class="CombatExtended.ToolCE">
                                 <label>blade</label>
@@ -85,7 +75,8 @@
                                 </capacities>
                                 <power>10</power>
                                 <cooldownTime>1.18</cooldownTime>
-                                <armorPenetrationBlunt>0.36</armorPenetrationBlunt>
+                                <chanceFactor>0.5</chanceFactor>
+				<armorPenetrationBlunt>0.36</armorPenetrationBlunt>
                                 <armorPenetrationSharp>0.32</armorPenetrationSharp>
                                 <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
                             </li>
@@ -94,11 +85,11 @@
                                 <capacities>
                                     <li>Stab</li>
                                 </capacities>
-                                <power>10</power>
+                                <power>18</power>
                                 <cooldownTime>1.19</cooldownTime>
                                 <chanceFactor>1.00</chanceFactor>
-                                <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
-                                <armorPenetrationSharp>1.0</armorPenetrationSharp>
+                                <armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+                                <armorPenetrationSharp>1.5</armorPenetrationSharp>
                                 <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
                             </li>
                         </tools>
@@ -112,14 +103,14 @@
                         <Mass>3.2</Mass>
                         <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
                         <ShotSpread>0.20</ShotSpread>
-                        <SwayFactor>1.30</SwayFactor>
+                        <SwayFactor>1.20</SwayFactor>
                         <Bulk>9.5</Bulk>
                         <SightsEfficiency>0.7</SightsEfficiency>
                         <WorkToMake>9600</WorkToMake>
                     </statBases>
                     <costList>
                         <Steel>55</Steel>
-                        <WoodLog>10</WoodLog>
+                        <WoodLog>15</WoodLog>
                         <ComponentIndustrial>1</ComponentIndustrial>
                     </costList>
                     <Properties>
@@ -127,7 +118,7 @@
                         <hasStandardCommand>true</hasStandardCommand>
                         <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                         <warmupTime>0.3</warmupTime>
-                        <range>14</range>
+                        <range>15</range>
                         <soundCast>GN_Shot_TrenchShotgun</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
@@ -152,14 +143,14 @@
                         <Mass>3.4</Mass>
                         <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
                         <ShotSpread>0.22</ShotSpread>
-                        <SwayFactor>1.32</SwayFactor>
-                        <Bulk>10.0</Bulk>
+                        <SwayFactor>1.35</SwayFactor>
+                        <Bulk>10.5</Bulk>
                         <SightsEfficiency>0.7</SightsEfficiency>
                         <WorkToMake>9600</WorkToMake>
                     </statBases>
                     <costList>
                         <Steel>65</Steel>
-                        <WoodLog>10</WoodLog>
+                        <WoodLog>15</WoodLog>
                         <ComponentIndustrial>1</ComponentIndustrial>
                     </costList>
                     <Properties>
@@ -167,7 +158,7 @@
                         <hasStandardCommand>true</hasStandardCommand>
                         <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
                         <warmupTime>0.3</warmupTime>
-                        <range>12</range>
+                        <range>14</range>
                         <soundCast>GN_Shot_TrenchShotgun</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
