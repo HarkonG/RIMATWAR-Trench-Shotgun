@@ -66,7 +66,7 @@
                                 <cooldownTime>1.55</cooldownTime>
                                 <chanceFactor>0.5</chanceFactor>
                                 <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-                                                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
                             </li>
                             <li Class="CombatExtended.ToolCE">
                                 <label>blade</label>
@@ -76,7 +76,7 @@
                                 <power>10</power>
                                 <cooldownTime>1.18</cooldownTime>
                                 <chanceFactor>0.5</chanceFactor>
-				<armorPenetrationBlunt>0.36</armorPenetrationBlunt>
+                                <armorPenetrationBlunt>0.36</armorPenetrationBlunt>
                                 <armorPenetrationSharp>0.32</armorPenetrationSharp>
                                 <linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
                             </li>
