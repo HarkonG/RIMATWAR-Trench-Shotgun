@@ -3,15 +3,15 @@
 <Patch>
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>[XND] Proper Shotguns</li>
             <li>Proper Shotguns (Unofficial Patch)</li>
+            <li>[XND] Proper Shotguns (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
                 <!-- Defines how many total pellets are launched for the shotgun's projectile -->
                 <!-- You also don't need to change damage amount; the mod will take care of that automatically -->
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ThingDef[defName="GN_Bullet_TrenchShotgun"]</xpath>
+                    <xpath>/Defs/ThingDef[defName="HRK_Bullet_TrenchShotgun"]</xpath>
                     <value>
                         <li Class="ProperShotguns.ShotgunExtension">
                             <pelletCount>6</pelletCount>
@@ -21,7 +21,7 @@
 
                 <!-- Changes the shotgun projectile's texture so that it appears to be a single pellet -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="GN_Bullet_TrenchShotgun"]/graphicData/texPath</xpath>
+                    <xpath>/Defs/ThingDef[defName="HRK_Bullet_TrenchShotgun"]/graphicData/texPath</xpath>
                     <value>
                         <texPath>Things/Projectile/Bullet_Small</texPath>
                     </value>
@@ -29,7 +29,7 @@
 
                 <!-- Effectively tells the game that the shotgun should fire buckshots according to its projectile's pelletCount -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="GN_TrenchShotgun"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="GN_Bullet_TrenchShotgun"]/verbClass</xpath>
+                    <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="HRK_Bullet_TrenchShotgun"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
@@ -37,7 +37,7 @@
 
                 <!-- Effectively tells the game that the shotgun should fire buckshots according to its projectile's pelletCount -->
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="GN_TrenchShotgun_B"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="GN_Bullet_TrenchShotgun"]/verbClass</xpath>
+                    <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="HRK_Bullet_TrenchShotgun"]/verbClass</xpath>
                     <value>
                         <verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
                     </value>
