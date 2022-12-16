@@ -3,7 +3,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>[HRK] RIM AT WAR - WW2 Japanese Weapons</li>
+            <li>[HRK] RIM AT WAR - Gunsmithing Research Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
