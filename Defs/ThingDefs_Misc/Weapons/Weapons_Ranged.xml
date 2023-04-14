@@ -4,7 +4,7 @@
 
   <!--===== Trench Shotgun Bullet =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_TrenchShotgun</defName>
+    <defName>HRK_Bullet_TrenchGun</defName>
     <label>M97 shotgun blast</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -20,59 +20,56 @@
   </ThingDef>
 
   <!--===== Trench Gun ===== -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>HRK_TrenchShotgun</defName>
+  <ThingDef ParentName="HRK_RimAtWar_USA_BaseHumanMakeableGun">
+    <defName>HRK_TrenchGunA</defName>
     <label>M97 "Trench Gun"</label>
     <description>The Winchester Model 1897, also known as the Model 97, M97, or Trench Gun, was a pump-action shotgun with an external hammer and tube magazine manufactured by the Winchester Repeating Arms Company. \n\nDue to its high rate of fire through the slamfire function, the weapon received the nickname "trench sweeper" in an ancient war and is still popular and appreciated by jump pack assault troops and veterans today.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_TrenchShotgun</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_TrenchGunA</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.2</drawSize>
-      <drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
-      <drawOffsetEast>(0.10, 0.0, -0.05)</drawOffsetEast>
-      <drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
-      <drawOffsetWest>(-0.10, 0.0, -0.05)</drawOffsetWest>
+      <drawSize>1.1</drawSize>
     </graphicData>
+    <uiIconPath>UI/Weapons/HRK_TrenchGunA</uiIconPath>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Shotgun</soundInteract>
+    <soundInteract>HRK_Interact_TrenchGun</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
       <researchPrerequisite>Gunsmithing</researchPrerequisite>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
     <statBases>
-      <WorkToMake>15000</WorkToMake>
+      <WorkToMake>12000</WorkToMake>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.77</AccuracyMedium>
-      <AccuracyLong>0.64</AccuracyLong>
-      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>65</Steel>
-      <WoodLog>20</WoodLog>
+      <Steel>60</Steel>
+      <WoodLog>10</WoodLog>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_TrenchShotgun</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>14</range>
-        <soundCast>HRK_Shot_TrenchShotgun</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <defaultProjectile>HRK_Bullet_TrenchGun</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>12</range>
+        <soundCast>HRK_Shot_TrenchGun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>M97 stock</label>
+        <label>stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -80,7 +77,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>M97 barrel</label>
+        <label>barrel</label>
         <capacities>
           <li>Blunt</li>
           <li>Poke</li>
@@ -89,65 +86,83 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>ShortShots</li>
     </weaponTags>
   </ThingDef>
 
   <!--===== Trench Gun (bayonet) ===== -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>HRK_TrenchShotgun_B</defName>
-    <label>M97 "Trench Gun" with bayonet</label>
+  <ThingDef ParentName="HRK_RimAtWar_USA_BaseHumanMakeableGun">
+    <defName>HRK_TrenchGunB</defName>
+    <label>M97 "Trench Gun"</label>
     <description>The Winchester Model 1897, also known as the Model 97, M97, or Trench Gun, was a pump-action shotgun with an external hammer and tube magazine manufactured by the Winchester Repeating Arms Company. \n\nDue to its high rate of fire through the slamfire function, the weapon received the nickname "trench sweeper" in an ancient war and is still popular and appreciated by jump pack assault troops and veterans today. \n\nThis M97 comes equipped with a sharp bayonet.</description>
     <graphicData>
-      <texPath>Things/Weapons/HRK_TrenchShotgun_B</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/HRK_TrenchGunB</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.2</drawSize>
-      <drawOffsetNorth>(0.0, 0.0, 0.0)</drawOffsetNorth>
-      <drawOffsetEast>(0.10, 0.0, -0.05)</drawOffsetEast>
-      <drawOffsetSouth>(0.0, 0.0, 0.0)</drawOffsetSouth>
-      <drawOffsetWest>(-0.10, 0.0, -0.05)</drawOffsetWest>
+      <drawSize>1.1</drawSize>
     </graphicData>
+    <uiIconPath>UI/Weapons/HRK_TrenchGunB</uiIconPath>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Shotgun</soundInteract>
+    <soundInteract>HRK_Interact_TrenchGun</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
       <researchPrerequisite>Gunsmithing</researchPrerequisite>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
     <statBases>
-      <WorkToMake>17000</WorkToMake>
+      <WorkToMake>14000</WorkToMake>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
-      <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.77</AccuracyMedium>
-      <AccuracyLong>0.64</AccuracyLong>
-      <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
     </statBases>
-    <costList>
-      <Steel>70</Steel>
-      <WoodLog>20</WoodLog>
+    <costList>      <!-- Knife is 30 steel + 1800 Work, doing +20 steel and +2000 work atm -->
+      <Steel>80</Steel>
+      <WoodLog>10</WoodLog>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_TrenchShotgun</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>13</range>
-        <soundCast>HRK_Shot_TrenchShotgun</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <defaultProjectile>HRK_Bullet_TrenchGun</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>12</range>
+        <soundCast>HRK_Shot_TrenchGun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>M97 stock</label>
+        <label>bayonet edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>bayonet point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <armorPenetration>0.50</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -155,25 +170,21 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>bayonet blade</label>
+        <label>barrel</label>
         <capacities>
-          <li>Cut</li>
+          <li>Blunt</li>
+          <li>Poke</li>
         </capacities>
         <power>9</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
-        <label>bayonet point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>19</power>
-        <armorPenetration>0.40</armorPenetration>
-        <cooldownTime>2</cooldownTime>
-      </li>
     </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>ShortShots</li>
     </weaponTags>
   </ThingDef>
 
